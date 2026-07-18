@@ -25,7 +25,7 @@ try:
     driver.get(url)
     
     # Put your copied selector inside the quotes below
-    selector = "PASTE_YOUR_COPIED_SELECTOR_HERE"
+    selector = "td[data-date='2026-07-19'] .fc-event-title"
     
     # Wait up to 15 seconds for the calendar element to load
     element = WebDriverWait(driver, 15).until(
