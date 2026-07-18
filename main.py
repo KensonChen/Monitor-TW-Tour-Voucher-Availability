@@ -19,7 +19,7 @@ options.add_argument('--disable-blink-features=AutomationControlled')
 driver = webdriver.Chrome(options=options)
 
 url = "https://halfdaytour.taiwan.net.tw/Schedule/self"
-webhook = os.environ.get("DISCORD_WEBHOOK_URL")
+webhook = os.environ.get("https://discord.com/api/webhooks/1527996637090156655/vomkN8m9D7pZ4qdDVMdiffubP6iBg2xiHzQNlJZcZ-Nm4GDGhMTZK3AaL4dFM9pJoC9e")
 
 try:
     driver.get(url)
