@@ -20,7 +20,7 @@ driver = webdriver.Chrome(options=options)
 
 url = "https://halfdaytour.taiwan.net.tw/Schedule/self"
 webhook = os.environ.get("https://discord.com/api/webhooks/1527996637090156655/vomkN8m9D7pZ4qdDVMdiffubP6iBg2xiHzQNlJZcZ-Nm4GDGhMTZK3AaL4dFM9pJoC9e")
-
+print(f"DEBUG Check - Did the webhook load successfully? {'YES' if webhook else 'NO, IT IS EMPTY'}")
 try:
     driver.get(url)
     
