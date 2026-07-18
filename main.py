@@ -35,7 +35,7 @@ try:
     quota = element.text.strip()
     
     # Using == for the test!
-    if quota == "0":
+    if quota != "0":
         requests.post(webhook, json={"content": f"🚨 TAIWAN TOUR ALERT! Quota is {quota}. Book now: {url}"})
         print(f"Alert sent! Quota is {quota}")
     else:
